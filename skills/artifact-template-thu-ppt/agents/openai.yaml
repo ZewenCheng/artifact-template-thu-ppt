@@ -1,0 +1,7 @@
+interface:
+  display_name: "清华紫 THU PPT"
+  short_description: "清华紫学术演示模板，含二十种可编辑页型、科研图表与中文讲稿规范"
+  icon_large: "./assets/preview.png"
+  default_prompt: "使用 $artifact-template-thu-ppt，把我的研究材料做成清华紫学术演示，保留图表的编辑能力，并在备注中写入中文逐页讲稿。"
+policy:
+  allow_implicit_invocation: true
