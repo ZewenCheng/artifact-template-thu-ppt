@@ -7,11 +7,11 @@
 ## 获取与安装
 
 - **安装到 Codex**　将下面这句话发给 Codex，使用内置的 `$skill-installer` 安装固定版本。
-- **离线安装**　在发布页下载 `artifact-template-thu-ppt-v1.0.0.zip`，解压后将整个 `artifact-template-thu-ppt` 文件夹放入 `$CODEX_HOME/skills/`。默认安装目录为 `~/.codex/skills/`。在下一条消息中即可调用。[下载 v1.0.0 和 SHA-256 校验文件](https://github.com/ZewenCheng/artifact-template-thu-ppt/releases/tag/v1.0.0)
-- **直接使用 PowerPoint**　下载可编辑母版，复制所需页型，再替换内容和图表数据。[下载 PPTX](https://raw.githubusercontent.com/ZewenCheng/artifact-template-thu-ppt/v1.0.0/skills/artifact-template-thu-ppt/assets/reference.pptx)
+- **离线安装**　在发布页下载 `artifact-template-thu-ppt-v1.0.1.zip`，解压后将整个 `artifact-template-thu-ppt` 文件夹放入 `$CODEX_HOME/skills/`。默认安装目录为 `~/.codex/skills/`。在下一条消息中即可调用。[下载 v1.0.1 和 SHA-256 校验文件](https://github.com/ZewenCheng/artifact-template-thu-ppt/releases/tag/v1.0.1)
+- **直接使用 PowerPoint**　下载可编辑母版，复制所需页型，再替换内容和图表数据。[下载 PPTX](https://raw.githubusercontent.com/ZewenCheng/artifact-template-thu-ppt/v1.0.1/skills/artifact-template-thu-ppt/assets/reference.pptx)
 
 ```text
-$skill-installer 请从 https://github.com/ZewenCheng/artifact-template-thu-ppt/tree/v1.0.0/skills/artifact-template-thu-ppt 安装这个技能。
+$skill-installer 请从 https://github.com/ZewenCheng/artifact-template-thu-ppt/tree/v1.0.1/skills/artifact-template-thu-ppt 安装这个技能。
 ```
 
 安装后，附上论文或草稿即可调用。
@@ -28,6 +28,14 @@ $skill-installer 请从 https://github.com/ZewenCheng/artifact-template-thu-ppt/
 
 ```sh
 python skills/artifact-template-thu-ppt/scripts/example_windows.py
+```
+
+## 重新打包
+
+在仓库根目录运行以下命令。脚本从版本标签直接读取 Git 对象，逐文件核对 ZIP 内容，并把安装包与 `SHA256SUMS.txt` 写入 `dist/v1.0.1/`。
+
+```sh
+python tools/package_skill.py v1.0.1
 ```
 
 ## 许可与素材来源
