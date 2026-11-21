@@ -7,7 +7,7 @@
 ## 获取与安装
 
 - **安装到 Codex**　将下面这句话发给 Codex，使用内置的 `$skill-installer` 安装固定版本。
-- **离线安装**　在发布页下载 `artifact-template-thu-ppt-v1.0.0.zip`，解压后将整个 `artifact-template-thu-ppt` 文件夹放入 `$CODEX_HOME/skills/`。默认安装目录为 `~/.codex/skills/`。安装后重启 Codex。[下载 v1.0.0 和 SHA-256 校验文件](https://github.com/ZewenCheng/artifact-template-thu-ppt/releases/tag/v1.0.0)
+- **离线安装**　在发布页下载 `artifact-template-thu-ppt-v1.0.0.zip`，解压后将整个 `artifact-template-thu-ppt` 文件夹放入 `$CODEX_HOME/skills/`。默认安装目录为 `~/.codex/skills/`。在下一条消息中即可调用。[下载 v1.0.0 和 SHA-256 校验文件](https://github.com/ZewenCheng/artifact-template-thu-ppt/releases/tag/v1.0.0)
 - **直接使用 PowerPoint**　下载可编辑母版，复制所需页型，再替换内容和图表数据。[下载 PPTX](https://raw.githubusercontent.com/ZewenCheng/artifact-template-thu-ppt/v1.0.0/skills/artifact-template-thu-ppt/assets/reference.pptx)
 
 ```text
